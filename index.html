@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clocKronii</title>
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KL32HZQ2G4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-KL32HZQ2G4');
+        </script>
+        <meta charset="utf-8"/>
+        <meta name="author" content="천상의나무">
+        <meta name="description" content="clocKronii">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:image" content="https://github.com/ajb3296/clocKronii/blob/main/screenshot1.png?raw=true">
+        <meta property="og:title" content="clocKronii">
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="icon" href="img/favicon.ico">
+
+        <link rel="apple-touch-icon" sizes="192x192" href="/img/icon-192x192.png">
+        <link rel="apple-touch-icon" sizes="512x512" href="/img/icon-512x512.png">
+        <link rel="manifest" href="manifest.json">
+
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+        <script>
+			var agent = navigator.userAgent.toLowerCase();
+			if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+				window.location.href="https://ajb3296.github.io/IE_filtering/";
+			}
+		</script>
+
+    </head>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="position: sticky;" id="mainNav">
+		<div class="container-fluid">
+			<a class="navbar-brand js-scroll-trigger logo" href="#">clocKronii</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="./index.html">Main</a>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="https://github.com/ajb3296/NabiTacToe">Github</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="https://twitter.com/ajb_3296">Twitter</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="https://www.youtube.com/channel/UCmbs8T6MWqUHP1tIQvSgKrg">Ouro Kronii Youtube</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="https://twitter.com/ourokronii">Ouro Kronii Twitter</a>
+						</li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <body>
+        <div class="main">
+            <div class="clockbox">
+                <svg id="clock" xmlns="http://www.w3.org/2000/svg" height="600" viewBox="0 0 600 600">
+                    <g id="face">
+                        <circle class="circle" cx="300" cy="300" r="120"/>
+                    </g>
+                    <g id="hour">
+                        <path class="hour-arm" style="stroke-width: 30;" d="M300 298V200"/>
+                        <path class="hour-arm" style="stroke-width: 20;" d="M300 298V170"/>
+                        <path class="hour-arm" style="stroke-width: 10;" d="M300 298V140"/>
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                    </g>
+                    <g id="minute">
+                        <path class="minute-arm" style="stroke-width: 10;" d="M300.5 298V60"/>
+                        <path class="minute-arm" style="stroke-width: 20;" d="M300.5 298V100"/>
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                    </g>
+                    <g id="second">
+                        <path class="second-arm" d="M300.5 350V5"/>
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                    </g>
+                    <g id="face">
+                        <circle class="mid-circle" cx="300" cy="300" r="50"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>

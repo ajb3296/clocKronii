@@ -1,0 +1,84 @@
+@font-face {
+    src : url("../fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf"); 
+    font-family: Julius_Sans_One;
+    font-display: swap;
+}
+
+html, body {
+    width : 100%;
+    height : 100%;
+    margin : 0;
+    padding : 0;
+    border : none;
+}
+
+.navbar-brand {
+    font-family: Julius_Sans_One;
+}
+
+/* Layout */
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+}
+
+.clockbox {
+    position: fixed;
+    top: 100px;
+}
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: #4A4A4A;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #666666;
+}
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #818181;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #818181;
+    stroke-width: 10;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #FFD400;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
