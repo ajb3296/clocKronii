@@ -30,7 +30,12 @@ var interval = setInterval(runTheClock, 1000);
 document.addEventListener('scroll', function() {
     var currentScrollValue = document.documentElement.scrollTop;
     if (currentScrollValue/10 < 50 && currentScrollValue > -5) {
-        document.getElementById('clock').style.transform = "perspective(500px) rotateX(" + currentScrollValue/10 + "deg)"
-        document.getElementById('clock').style.filter = "drop-shadow( " +currentScrollValue/80+ "px " + currentScrollValue/10 + "px 5px #CCCCCC)"
+        document.getElementById('clock').style.transform = "perspective(500px) rotateX(" + currentScrollValue/10 + "deg)";
+        document.getElementById('clock').style.filter = "drop-shadow( " +currentScrollValue/80+ "px " + currentScrollValue/10 + "px 5px #CCCCCC)";
+    }
+    if (currentScrollValue/10 > 3){
+        document.getElementById('downimg').style.display = "none";
+    } else {
+        document.getElementById('downimg').style.display = "block";
     }
 });
