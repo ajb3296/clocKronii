@@ -1,6 +1,6 @@
-const HOURHAND = document.querySelector("#hour");
-const MINUTEHAND = document.querySelector("#minute");
-const SECONDHAND = document.querySelector("#second");
+const HOURHAND = document.getElementById("hour");
+const MINUTEHAND = document.getElementById("minute");
+const SECONDHAND = document.getElementById("second");
 
 let date = new Date();
 console.log(date);
